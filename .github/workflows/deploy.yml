@@ -16,4 +16,6 @@ jobs:
           port: 22
           script: |
             rm -rf docker-deploy
-            git clone https://github.com/petelah/csign.git
+            git clone https://github.com/petelah/docker-deploy.git
+            cd docker-deploy
+            sudo docker-compose up -d
