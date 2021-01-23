@@ -11,7 +11,7 @@ RUN apt-get install -y python3-pip python3-dev build-essential libssl-dev libffi
 FROM nginx:latest
 
 # Create web.conf
-ADD web.conf /etc/nginx/conf.d/web.conf
+ADD nginx.conf /etc/nginx/nginx.conf
 
 # Check the config
 RUN nginx -t
