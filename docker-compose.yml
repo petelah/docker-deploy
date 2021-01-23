@@ -3,7 +3,7 @@ services:
   test-app:
     restart: always
     build: ./test-app
-    command: gunicorn -w 4 --bind :5000 app:app
+    command: gunicorn -w 4 --bind 0.0.0.0:5000 app:app
     expose:
       - "5000"
     ports:
