@@ -18,4 +18,5 @@ jobs:
             rm -rf docker-deploy
             git clone https://github.com/petelah/docker-deploy.git
             cd docker-deploy
-            sudo docker-compose up -d
+            chmod u+x run_docker.sh
+            ./run_docker.sh
