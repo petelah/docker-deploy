@@ -1,14 +1,5 @@
-# Pull ubuntu latest
-FROM ubuntu:latest
-
 # Pull python
-FROM python:3.8
-
-# Update
-RUN apt-get update -y
-
-#Install pip and other build tools
-RUN apt-get install -y python3-pip python3-dev build-essential libssl-dev libffi-dev
+FROM python:3.8-slim
 
 # Create working dir
 RUN mkdir /test-app
